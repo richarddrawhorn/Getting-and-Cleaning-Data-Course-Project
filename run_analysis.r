@@ -64,8 +64,8 @@ rm(n, gdata, activities, features, test_data, test_labels, test_subjects)
 rm(train_data, train_labels, train_subjects)
 
 # write output datasets to csv files 
-write.csv(data, file="data.csv")
-write.csv(stats, file="stats.csv")
+write.csv(data, file="data.csv", row.names=FALSE)
+write.csv(stats, file="stats.csv", row.names=FALSE)
 
 
 
