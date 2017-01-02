@@ -5,6 +5,7 @@ This is the final project for the Coursera course "Getting and Cleaning Data".
 2. Unzip the data files into a folder named "data" in your desired project directory. 
 3. Start R and set the working directory to your project directory that contains the raw data folder. 
 4. Run the attached R script "run_analysis.r". 
+5. The script will create two output CSV files named "data.csv" (the main output file containing the mean and standard deviation variables only) and "stats.csv" (data grouped by activity and subject, with average of each variable calculated). 
 
 The R script contains detailed comments, but here is a general description of how it works. 
 
@@ -14,6 +15,6 @@ The R script contains detailed comments, but here is a general description of ho
 4. Descriptive activity names are added to "data" to replace the integer values. 
 5. Parenthesis characters are removed from the column names to improve readability. 
 6. "data" is converted to a "tbl_df" using the dplyr package, and a subset is extracted that contains only the "mean" and "standard deviation" variables. 
-7. The data are grouped by "activity" and "subject", and the average is calculated for each variable. 
+7. A new tbl_df named "stats" is created in which data are grouped by "activity" and "subject", and the average value of each variable is calculated. 
 
 
